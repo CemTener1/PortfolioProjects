@@ -37,6 +37,7 @@ prp(deeper.ct,type=1,extra=1,under=TRUE,split.font=1,varlen=-5,box.col=ifelse(de
 deeper.ct.pred.valid=as.factor(predict(deeper.ct,valid.df,type="class"))
 confusionMatrix(deeper.ct.pred.valid,valid.df.Loan)
 
+#The simpler model had an accuracy of 86.35% and it went down to 74.74% in the deeper tree model.
 #From this example we can understand that making a model more complex does not make it better.
 
 
