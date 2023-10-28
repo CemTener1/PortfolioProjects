@@ -64,10 +64,10 @@ JOIN products USING (productID)
 GROUP BY SalesPersonID, FirstName, MiddleInitial, LastName, Price
 ORDER BY revenue_brought DESC;
 
--- Point system for employees (.2*units sold + .8 revenue)/10000000 and categorize
+-- Point system for employees (.3*units sold + .7 revenue)/10000000 and categorize
 
 SELECT *,
-       CEILING((revenue_brought * 0.6 + 0.35 * units_sold) / 10000) AS points,
+       CEILING((revenue_brought * 0.7 + 0.3 * units_sold) / 10000) AS points,
        CASE 
 			WHEN (SELECT points ) > 2000 THEN 'Elite'
             WHEN (SELECT points) > 1000 THEN 'Top'
