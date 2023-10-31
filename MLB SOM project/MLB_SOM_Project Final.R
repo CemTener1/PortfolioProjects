@@ -11,10 +11,6 @@
 ### - Associated samples from the input data. Each sample in the input space is "mapped" to a node on the mpa grid. 
 ###   One node can represent several input samples (THIS IS IMPORTANT)
 
-## Real World Example
-### If everyone in the room stood up and compared attributes about themselves (height, age, gender, major, etc.).
-### Everyone moves until they are closest to the people with similar attributes (Euclidean distance).
-### Then raise a card indicating one of the attributes - that would be a SOM heatmap.
 
 #Load the Libraries
 library(kohonen)
